@@ -3,11 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "domain", "domain\domain.csproj", "{A3EE0AE7-C3BA-40A5-8CF4-4299E496862D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "domain", "domain\domain.csproj", "{A3EE0AE7-C3BA-40A5-8CF4-4299E496862D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "infrastructure.ef", "infrastructure.ef\infrastructure.ef.csproj", "{168A9B3D-9864-4F7C-80D1-FC7452541B21}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "infrastructure.ef", "infrastructure.ef\infrastructure.ef.csproj", "{168A9B3D-9864-4F7C-80D1-FC7452541B21}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "infrastructure.ef.integration", "infrastructure.ef.integration\infrastructure.ef.integration.csproj", "{8673DC22-86AE-47EE-89AA-9CDBA6287615}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "infrastructure.ef.integration", "infrastructure.ef.integration\infrastructure.ef.integration.csproj", "{8673DC22-86AE-47EE-89AA-9CDBA6287615}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "api.basket", "api.basket\api.basket.csproj", "{4EC91F3B-D3C8-4784-8B71-08B9264FA895}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "libs", "libs", "{9AA5E7A6-0FD8-430D-A8D8-D2BA01CFD157}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,9 +31,18 @@ Global
 		{8673DC22-86AE-47EE-89AA-9CDBA6287615}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8673DC22-86AE-47EE-89AA-9CDBA6287615}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8673DC22-86AE-47EE-89AA-9CDBA6287615}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4EC91F3B-D3C8-4784-8B71-08B9264FA895}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4EC91F3B-D3C8-4784-8B71-08B9264FA895}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4EC91F3B-D3C8-4784-8B71-08B9264FA895}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4EC91F3B-D3C8-4784-8B71-08B9264FA895}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A3EE0AE7-C3BA-40A5-8CF4-4299E496862D} = {9AA5E7A6-0FD8-430D-A8D8-D2BA01CFD157}
+		{168A9B3D-9864-4F7C-80D1-FC7452541B21} = {9AA5E7A6-0FD8-430D-A8D8-D2BA01CFD157}
+		{8673DC22-86AE-47EE-89AA-9CDBA6287615} = {9AA5E7A6-0FD8-430D-A8D8-D2BA01CFD157}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2E09A6BA-602B-4927-8B42-DB4A0AD27C26}
