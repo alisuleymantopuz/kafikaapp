@@ -2,15 +2,11 @@
 using api.basket.Services;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.Extensions.Logging;
-using System;
 
 namespace api.basket.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("api/[controller]")]
     public class BasketController : ControllerBase
     {
         private readonly BasketService _basketService;
